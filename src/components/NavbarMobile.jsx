@@ -107,17 +107,16 @@ export default function NavbarMobile({ activeSection, onOpenResume }) {
             </nav>
 
             <div className="mobile-drawer-cta-group">
-              <button
-                type="button"
-                onClick={() => {
-                  setIsOpen(false);
-                  onOpenResume();
-                }}
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
                 className="mobile-resume-cta"
               >
                 <FileTextIcon size={16} />
                 <span>Download Resume</span>
-              </button>
+              </a>
 
               <div className="mobile-social-row">
                 <a

@@ -92,7 +92,7 @@ export default function App() {
       {/* Mobile Top Navigation Header (<1024px) */}
       <NavbarMobile
         activeSection={activeSection}
-        onOpenResume={() => setIsResumeOpen(true)}
+        onOpenResume={() => window.open('/resume.pdf', '_blank')}
       />
 
       <div className="darkmate-layout-wrapper">
@@ -110,7 +110,7 @@ export default function App() {
             isDocked={isDocked}
             scrollY={scrollY}
             activeSection={activeSection}
-            onOpenResume={() => setIsResumeOpen(true)}
+            onOpenResume={() => window.open('/resume.pdf', '_blank')}
           />
         </div>
 

@@ -186,6 +186,8 @@ export default function ResumeModal({ isOpen, onClose }) {
         >
           <a
             href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             download="Matheshwaran_N_Resume.pdf"
             className="direct-email-btn"
             style={{ textDecoration: 'none' }}

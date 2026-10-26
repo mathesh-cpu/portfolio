@@ -106,15 +106,16 @@ export default function UnifiedProfileDock({
                 <span>EMAIL ME</span>
               </a>
 
-              <button
-                type="button"
-                onClick={onOpenResume}
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hero-secondary-cta resume-cta interactive-glow"
                 aria-label="View or Download Resume"
               >
                 <span className="btn-icon">📄</span>
                 <span>VIEW RESUME</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -153,16 +154,17 @@ export default function UnifiedProfileDock({
 
       {/* 3. Bottom: Download Resume action button + clean social icon links (GitHub, LinkedIn, Email) */}
       <div className="dock-rail-footer">
-        <button
-          type="button"
-          onClick={onOpenResume}
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="dock-resume-btn"
           aria-label="Download Resume"
         >
           <FileTextIcon size={14} />
           <span>Download Resume</span>
           <ExternalLinkIcon size={11} style={{ opacity: 0.6, marginLeft: 'auto' }} />
-        </button>
+        </a>
 
         <div className="dock-social-links" aria-label="Social Links">
           <a
